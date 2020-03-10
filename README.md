@@ -16,7 +16,6 @@ String url = "http://10.0.2.2:8088";
 mQueue.add(new JsonObjectRequest(Request.Method.POST, url, parameters,・・・))  
 ```
 Request.Method : POSTを設定する。  
-url            : 接続するサイトのURL  
+url            : 接続するサイトのURL  ※今回はAndroidEMU宛て
 parameters     : 設定したい値をここに記載（リクエストボディに設定される）  
 
-## 
