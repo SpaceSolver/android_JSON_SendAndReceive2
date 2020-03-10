@@ -42,15 +42,15 @@ public class MainActivity extends AppCompatActivity {
             String url = "http://10.0.2.2:8088";
 
             // リクエストパラメータ
-//            Map<String, String> params = new HashMap();
-//            params.put("num", "1");
-//            params.put("name", "2");
-//
-//            JSONObject parameters = new JSONObject(params);
+            Map<String, String> params = new HashMap();
+            params.put("num", "1");
+            params.put("name", "2");
+
+            JSONObject parameters = new JSONObject(params);
 
             mQueue = Volley.newRequestQueue(this);
-            //mQueue.add(new JsonObjectRequest(Request.Method.POST, url, parameters,
-            mQueue.add(new JsonObjectRequest(Request.Method.GET, url, null,
+            mQueue.add(new JsonObjectRequest(Request.Method.POST, url, parameters,
+            //mQueue.add(new JsonObjectRequest(Request.Method.GET, url, null,
                     new Response.Listener<JSONObject>()
                     {
                         @Override
