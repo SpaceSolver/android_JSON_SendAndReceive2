@@ -19,3 +19,4 @@ Request.Method : POSTを設定する。
 url            : 接続するサイトのURL  
 parameters     : 設定したい値をここに記載（リクエストボディに設定される）  
 
+## 
