@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             // タイトル（地点）
             TextView textview = findViewById(R.id.WetherInfoText);
             String title = response.getString("num");
-            //textview.setText(title);
+            textview.setText("返ってきた値＝" + title);
 
         }
         catch (JSONException e)
